@@ -1,0 +1,388 @@
+/* =================================
+   HOME FEATURE
+================================= */
+
+.home-feature {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+
+.feature-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+}
+
+
+.feature-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.feature-content h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+
+}
+
+
+.feature-content p:not(.small-title) {
+
+    color: #666;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =================================
+   TYPES FEATURE
+================================= */
+
+.types-feature {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 100px;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+}
+
+
+.types-feature img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+}
+
+
+.types-feature div {
+
+    padding: 50px;
+
+}
+
+
+.types-feature h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+
+}
+
+
+.types-feature p:not(.small-title) {
+
+    color: #666;
+
+}
+
+
+/* =================================
+   EVOLUTION TIMELINE
+================================= */
+
+.evolution-timeline {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 100px;
+
+}
+
+
+.history-card {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 70px;
+
+    background: white;
+
+}
+
+
+.history-card.reverse {
+
+    direction: rtl;
+
+}
+
+
+.history-card.reverse .history-content {
+
+    direction: ltr;
+
+}
+
+
+.history-image {
+
+    height: 400px;
+
+}
+
+
+.history-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.history-content {
+
+    padding: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.history-content span {
+
+    color: #a47b42;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.history-content h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+
+}
+
+
+.history-content p {
+
+    color: #666;
+
+}
+
+
+/* =================================
+   CONTACT IMAGE
+================================= */
+
+.contact-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+}
+
+
+.contact-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =================================
+   CONTACT FORM SECTION
+================================= */
+
+.contact-form-section {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: 0 auto 100px;
+
+}
+
+
+.contact-form h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .home-feature {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .types-feature {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .history-card,
+    .history-card.reverse {
+
+        grid-template-columns: 1fr;
+
+        direction: ltr;
+
+    }
+
+
+    .history-card.reverse .history-content {
+
+        direction: ltr;
+
+    }
+
+
+    .contact-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-feature {
+
+        width: 90%;
+
+    }
+
+
+    .feature-image {
+
+        height: 400px;
+
+    }
+
+
+    .feature-content {
+
+        padding: 10px;
+
+    }
+
+
+    .feature-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .types-feature div {
+
+        padding: 30px;
+
+    }
+
+
+    .history-content {
+
+        padding: 30px;
+
+    }
+
+
+    .history-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .contact-image {
+
+        height: 400px;
+
+    }
+
+}
